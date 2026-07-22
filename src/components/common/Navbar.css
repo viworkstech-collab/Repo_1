@@ -1,3 +1,9 @@
+*{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .navbar {
     display: flex;
     align-items: center;
@@ -13,12 +19,13 @@
 
 .nav-top {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
 }
 
 .nav-left {
+    flex:1;
     display: flex;
     align-items: center;
 }
@@ -28,37 +35,59 @@
 }
 
 .nav-title {
-    margin: 0;
-    font-size: 28px;
-    font-weight: 700;
-    color: #1b0743;
     font-family: 'poppins', sans-serif;
-    cursor: pointer;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 33px;
+    color: #091B63;
 }
 
 .nav-right {
+    flex:2;
     display: flex;
+    justify-content:center;
     align-items: center;
-    gap: 32px;
+    gap: 30px;
 }
 
 .nav-link {
+    position: relative;
     text-decoration: none;
-    color: #230a4a;
-    font-size: 16px;
-    font-weight: 500;
     font-family: 'poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 21px;
+    color: #091B63;
     transition: color 0.3s ease;
+    cursor: pointer;
 }
 
+.nav-link::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #D95E39;
+    transition: width 0.3s ease;
+}
 .nav-link:hover {
-    color: #bd393b;
+    color: #d86a43;
+}
+
+.nav-link:hover::after {
+    width: 100%;
 }
 
 .nav-link.active {
-    color: #0A66C2;
-    font-weight: 600;
+    color: #D95E39;
 }
+
+.nav-link.active::after {
+    width: 100%;
+}
+
 
 
 @media (max-width: 1280px) {
@@ -78,7 +107,11 @@
     }
 
     .nav-title {
-        font-size: 24px;
+        margin: 0;
+        font-size: 22px;
+        font-weight: 700;
+        color: #091B63;
+        font-family: 'poppins', sans-serif;
     }
 
     .nav-right {
@@ -103,17 +136,30 @@
     }
 }
 
+.Category-bar{
+    flex:1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 .Category-button {
-    background-color: #0d0830;
-    color: white;
+    width: 160px;
+    height: 44px;
+    background-color: #081A5B;
+    color: #fff;
     border: none;
-    padding: 12px 24px;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
+    border-radius: 0;
+    font-family: 'poppins', sans-serif;
+    font-size: 15px;
     font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .Category-button:hover {
-    background-color: #2810ab;
+    background-color: #0B2473;
 }

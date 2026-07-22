@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -7,21 +7,21 @@ const Navbar = () => {
     <nav className="navbar">
         <div className="nav-top">
           <div className="nav-left">
-            <a href="/" className="nav-title-link">
+            <NavLink to="/" className="nav-title-link">
               <h1 className="nav-title">ViworkTech</h1>
-            </a>
+            </NavLink>
           </div>
           <div className="nav-right">
-            <Link to="/home" className="nav-link">Home</Link>
-            <Link to="/services" className="nav-link">Services</Link>
-            <Link to="/about" className="nav-link">About</Link>
-            <Link to="/Portfolio" className="nav-link">Portfolio</Link>
-            <Link to="/careers" className="nav-link">Careers</Link>
-            <Link to="/blogs" className="nav-link">Blog</Link>
-            <Link to="/contact" className="nav-link">Contact</Link>
+            <NavLink to="/home" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Home</NavLink>
+            <NavLink to="/services" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Services</NavLink>
+            <NavLink to="/about" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>About</NavLink>
+            <NavLink to="/portfolio" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Portfolio</NavLink>
+            <NavLink to="/careers" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Careers</NavLink>
+            <NavLink to="/blogs" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Blog</NavLink>
+            <NavLink to="/contact" className={({ isActive }) => isActive ? "nav-link active" : "nav-link"}>Contact</NavLink>
           </div>
           <div className="Category-bar">
-            <button className="Category-button">Get Started</button>
+            <button className="Category-button">Get In Touch</button>
 
           </div>
             
