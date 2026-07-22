@@ -4,7 +4,10 @@ const ProcessSection = () => {
   return (
     <section className="process">
 
-      <h2>A framework of absolute precision.</h2>
+      <h2>A framework of 
+        <br></br>
+        absolute precision.
+      </h2>
 
       <div className="process-grid">
 
