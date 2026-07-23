@@ -1,8 +1,12 @@
-import './App.css'
-import Portfolio from './pages/Portfolio'
+import React from "react";
+import portfolio from "./pages/portfolio";
 
 function App() {
-  return <Portfolio />
+  return (
+    <div>
+      <Portfolio />
+    </div>
+  );
 }
 
-export default App
+export default portfolio;
