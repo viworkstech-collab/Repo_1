@@ -14,8 +14,6 @@ body{
     width:100%;
 }
 
-/* ================= HERO ================= */
-
 .hero{
     max-width:1200px;
     margin:0 auto;
@@ -42,12 +40,10 @@ body{
 
 .hero p{
     max-width:560px;
-    color:#666;
+    color:#2e2162;
     font-size:18px;
     line-height:1.8;
 }
-
-/* ================= SERVICES ================= */
 
 .services-section{
     max-width:1200px;
@@ -76,7 +72,7 @@ body{
 
 .left p{
     max-width:430px;
-    color:#666;
+    color:#2e2162;
     line-height:1.8;
     margin-bottom:28px;
 }
@@ -132,8 +128,6 @@ body{
     margin:50px 0 70px;
 }
 
-/* ================= PROCESS ================= */
-
 .process{
     background:#06196f;
     color:#ffffff;
@@ -181,8 +175,6 @@ body{
     line-height:1.8;
 }
 
-/* ================= CTA ================= */
-
 .cta{
     background:#f8f6f1;
     padding:120px 20px;
@@ -221,8 +213,6 @@ body{
     color:#1a1a1a;
     border:1px solid #d3d3d3;
 }
-
-/* ================= RESPONSIVE ================= */
 
 @media(max-width:992px){
 
