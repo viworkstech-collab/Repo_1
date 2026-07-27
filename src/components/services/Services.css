@@ -6,7 +6,7 @@
 }
 
 body{
-    background:#f8f6f1;
+    background:white;
     color:#1d1d1d;
 }
 
@@ -18,7 +18,7 @@ body{
     max-width:1200px;
     margin:0 auto;
     padding:90px 35px;
-    background:#f8f6f1;
+    background:white;
     text-align:left;
 }
 
@@ -95,7 +95,7 @@ body{
 }
 
 .right{
-    background:#f5f2fb;
+    background:white;
     border:1px solid #ece7f4;
     padding:28px;
 }
@@ -176,7 +176,7 @@ body{
 }
 
 .cta{
-    background:#f8f6f1;
+    background:white;
     padding:120px 20px;
     text-align:center;
 }
@@ -209,7 +209,7 @@ body{
 }
 
 .outline{
-    background:#fff;
+    background:white;
     color:#1a1a1a;
     border:1px solid #d3d3d3;
 }
