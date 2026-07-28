@@ -1,12 +1,16 @@
-import React from "react";
-import portfolio from "./pages/portfolio";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Portfolio from "./pages/portfolio";
+import Blog from "./pages/Blog";
 
 function App() {
   return (
-    <div>
-      <Portfolio />
-    </div>
+    <Router>
+      <Routes>
+  <Route path="/" element={<Blog />} />
+  <Route path="/portfolio" element={<Portfolio />} />
+</Routes>
+    </Router>
   );
 }
 
-export default portfolio;
+export default App;
